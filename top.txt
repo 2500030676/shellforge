@@ -1,0 +1,29 @@
+top - 07:48:10 up 2 min,  1 user,  load average: 0.02, 0.04, 0.01
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7651.2 total,   6019.2 free,    568.4 used,   1216.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7082.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21956  13464   9780 S   0.0   0.2   0:01.56 /sbin/i+
+      2 root      20   0    3180   2208   2072 S   0.0   0.0   0:00.05 /init
+      9 root      20   0    3196   2128   2008 S   0.0   0.0   0:00.00 plan9 -+
+     58 root      19  -1   50444  19424  18348 S   0.0   0.2   0:00.29 /usr/li+
+    110 root      20   0   25548   6892   5176 S   0.0   0.1   0:00.32 /usr/li+
+    143 systemd+  20   0   21344  13216  11088 S   0.0   0.2   0:00.14 /usr/li+
+    184 systemd+  20   0   91036   7988   7028 S   0.0   0.1   0:00.13 /usr/li+
+    202 root      20   0    4244   2684   2432 S   0.0   0.0   0:00.00 /usr/sb+
+    203 message+  20   0    9536   5364   4672 S   0.0   0.1   0:00.06 @dbus-d+
+    219 root      20   0   17972   8848   7812 S   0.0   0.1   0:00.20 /usr/li+
+    233 root      20   0 1756628  13816  11444 S   0.0   0.2   0:00.23 /usr/li+
+    248 root      20   0    3124   1972   1836 S   0.0   0.0   0:00.01 /sbin/a+
+    259 syslog    20   0  222516   5896   4540 S   0.0   0.1   0:00.13 /usr/sb+
+    291 root      20   0  107036  23112  13652 S   0.0   0.3   0:00.35 /usr/bi+
+    355 root      20   0    3184   1112    980 S   0.0   0.0   0:00.00 /init
+    356 root      20   0    3200   1248   1108 S   0.0   0.0   0:00.02 /init
+    357 prasant+  20   0    6076   5372   3648 S   0.0   0.1   0:00.08 -bash
+    358 root      20   0    6700   4668   3884 S   0.0   0.1   0:00.02 /bin/lo+
+    408 prasant+  20   0   20332  11524   9392 S   0.0   0.1   0:00.15 /usr/li+
+    409 prasant+  20   0   21168   3564   1840 S   0.0   0.0   0:00.00 (sd-pam)
+    438 prasant+  20   0    6080   5356   3692 S   0.0   0.1   0:00.06 -bash
+    702 prasant+  20   0    9292   5332   3240 R   0.0   0.1   0:00.00 top -b +

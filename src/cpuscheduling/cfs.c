@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+struct Process
+{
+    int pid;
+    int burst_time;
+    int vruntime;
+};
+
+int main()
+{
+    int n, i, j;
+    struct Process p[20];
+    struct Process temp;
+
+    printf("Enter number of processes: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+    {
+        p[i].pid = i + 1;
+
+        printf("Enter burst time for P%d: ", i + 1);
+        scanf("%d", &p[i].burst_time);
+
+        p[i].vruntime = 0;
+    }
+
+    printf("\nCFS Scheduling Order:\n");
+
+    for(i = 0; i < n; i++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            if(p[i].vruntime > p[j].vruntime)
+            {
+                temp = p[i];
+                p[i] = p[j];
+                p[j] = temp;
+            }
+        }
+
+        printf("P%d -> ", p[i].pid);
+
+        p[i].vruntime += p[i].burst_time;
+    }
+
+    printf("END\n");
+
+    printf("\nProcess\tBurst Time\tVirtual Runtime\n");
+
+    for(i = 0; i < n; i++)
+    {
+        printf("P%d\t%d\t\t%d\n",
+               p[i].pid,
+               p[i].burst_time,
+               p[i].vruntime);
+    }
+
+    return 0;
+}
